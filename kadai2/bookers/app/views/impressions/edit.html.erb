@@ -1,0 +1,14 @@
+<h1>Editing Book</h1>
+
+<%= form_for(@impression) do |f| %>
+<label for="impression_title">Title</label>
+<div><%= f.text_field :title %></div>
+<label for="impression_body">Body</label>
+<div><%= f.text_area :body %><br></div>
+<%= f.submit 'Update Book' %>
+<% end %>
+
+<%= link_to 'Show', impression_path(@impression.id), class: "show_#{@impression.id}"
+ %>
+|
+<%= link_to "back", impressions_path %>

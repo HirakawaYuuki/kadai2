@@ -1,0 +1,103 @@
+<body>
+    <p id="notice"></p>
+	<h1>Books</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Body</th>
+				<th colspan="3"></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>リーダブルコード</td>
+				<td>より良いコードを書aaaくためのシンプルで実践的なプログラム</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>dd</td>
+				<td>ddd</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>トラブル知らずのシステム設計</td>
+				<td>システム設計の要点を図解で説明してくれます</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					たのしいRuby
+				</td>
+				<td>
+					Rubyの入門におすすめです
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					入門Git
+				</td>
+				<td>
+					gitについての基本操作から内部構造まで解説してくれます
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					アルゴリズム図鑑
+				</td>
+				<td>アルゴリズムについてカラーイラストでしっかり解説してくれます</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					達人プログラマー
+				</td>
+				<td>
+					プログラマ入門者は必読！
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					データベース実践入門
+				</td>
+				<td>
+					効率的なSQL文を教えてくれます
+				</td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+<h2>New book</h2>
+
+<%= form_for(@impression) do |f| %>
+  <h4>Title</h4>
+<%= f.text_field :title %>
+
+  <h4>Body</h4>
+  <%= f.text_area :body %><br>
+
+  <%= f.submit 'Create Book' %>
+
+<% end %>
+

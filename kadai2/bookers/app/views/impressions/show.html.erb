@@ -1,0 +1,19 @@
+<body>
+	<% if flash[:notice] %>
+    <div class="notice"> <%= flash[:notice] %></div>
+    <% end %>
+
+	<p>
+		<strong>Title:</strong>
+	<%= @impression.title %>
+</p>
+<p>
+	<strong>Body:</strong>
+	<%= @impression.body %>
+</p>
+<%= link_to "Edit", edit_impression_path(@impression), class: "edit_#{@impression.id}" %>
+|
+<%= link_to "Back", impressions_path %>
+
+</body>
+
