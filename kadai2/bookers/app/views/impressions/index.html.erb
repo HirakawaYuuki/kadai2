@@ -14,9 +14,9 @@
 			<tr>
 				<td><%= impression.title %> </td>
 				<td><%= impression.body %>  </td>
-				<td><%= link_to 'Show', impression_path(impression.id), class: "show_#{@impression.id}" %> </td>
-				<td><%= link_to 'Edit', edit_impression_path(impression.id), class: "edit_#{@impression.id}" %> </td>
-				<td><%= link_to 'Destroy', impression_path(impression.id), class: "destroy_#{@impression.id}", method: :delete %> </td>
+				<td><%= link_to 'Show', impression_path(impression.id), class: "show_#{impression.id}" %> </td>
+				<td><%= link_to 'Edit', edit_impression_path(impression.id), class: "edit_#{impression.id}" %> </td>
+				<td><%= link_to 'Destroy', impression_path(impression.id), class: "destroy_#{impression.id}", method: :delete %> </td>
 			</tr>
 			<% end %>
 		</tbody>
